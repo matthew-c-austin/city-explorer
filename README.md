@@ -28,6 +28,6 @@ Estimate of time needed to complete: 30 minutes
 
 Start time: 2023-01-24T20:56-08:00
 
-Finish time: _____
+Finish time: 2023-01-24T21:22-08:00
 
-Actual time needed to complete: _____
+Actual time needed to complete: 26 minutes
