@@ -1,21 +1,37 @@
-# Project Name
+# City Explorer
 
 **Author**: Matthew Austin
 **Version**: 1.0.0
 
 ## Overview
-<!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for this class. (i.e. What's your problem domain?) -->
+
+This application is a city explorer that lets you search for U.S. cities and display their coordinates, as well as a static map image.
 
 ## Getting Started
-<!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
+
+[Live site](matt-austin-city-explorer.netlify.app)
 
 ## Architecture
-<!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
+
+This app is built with:
+
+- JavaScript
+- HTML5
+- CSS3
+- React
+- React Bootstrap
+- Axios
+- Deployed on Netlify
+
+### Location Explorer
+
+The Location Explorer functionality allows a user to for U.S. cities and display their coordinates, as well as a static map image. The web-request-response cycle for this feature is shown below
+
+![Web Request Response Cycle for Location Explorer](public/images/location-explorer-WRC.jpg)
 
 ## Change Log
-<!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
 
-01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
+1.0.0 - Initial deployment of location explorer feature
 
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
@@ -31,3 +47,33 @@ Start time: 2023-01-24T20:56-08:00
 Finish time: 2023-01-24T21:22-08:00
 
 Actual time needed to complete: 26 minutes
+
+### Locations
+
+Estimate of time needed to complete: 1 hour
+
+Start time: 2023-01-25T20:30-08:00
+
+Finish time: 2023-01-25T21:22-08:00
+
+Actual time needed to complete: 1 hour 22 minutes
+
+### Map
+
+Estimate of time needed to complete: 2 hours
+
+Start time: 2023-01-25T21:30-08:00, 2023-01-26T14:30-08:00
+
+Finish time: 2023-01-25T22:22-08:00, 2023-01-26T14:53-08:00
+
+Actual time needed to complete: 1 hour 25 minutes
+
+### Errors
+
+Estimate of time needed to complete: 1 hour
+
+Start time: 2023-01-26T15:00-08:00
+
+Finish time: 2023-01-26T15:45-08:00
+
+Actual time needed to complete: 45 minutes
