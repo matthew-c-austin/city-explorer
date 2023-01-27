@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React from 'react';
-import { Button, Container, Form } from 'react-bootstrap';
+import { Button, Container, Form, Col, Row } from 'react-bootstrap';
 import Map from './Map';
 import ErrorModal from './ErrorModal';
 
@@ -95,34 +95,36 @@ class LocationExplorer extends React.Component {
   render(){
     return(
       <>
-        <Container>
+        <Container className='location-explorer py-4 rounded'>
           <Form onSubmit={this.displaySearch}>
-            <Form.Group>
-              <Form.Label>Enter City</Form.Label>
-              <Form.Control type='text' onInput={this.handleSearchInput}/>
-            </Form.Group>
-            <Button onClick={this.displaySearch}>Explore!</Button>
+            <Row className="align-items-center">
+              <Col xs='auto'>
+                <Form.Group>
+                  <Form.Label visuallyHidden>Enter a U.S. City</Form.Label>
+                  <Form.Control type='text' placeholder='Enter a U.S. City' onInput={this.handleSearchInput}/>
+                </Form.Group>
+              </Col>
+              <Col xs='auto'>
+                <Button className="location-explorer-btn" onClick={this.displaySearch}>Explore!</Button>
+              </Col>
+            </Row>
           </Form>
+          {this.state.displayInfo &&
+        <div className='lat-and-lon text-center'>
+          <h2 className='my-3'>{this.state.cityData.display_name}</h2>
+          <h3 className='my-4'>Lat:{this.state.cityData.lat}  Lon:{this.state.cityData.lon}</h3>
+          <Map mapImg={this.state.cityMapImg} city={this.state.city} />
+        </div>
+          }
         </Container>
 
-        {this.state.displayInfo &&
-        <>
-          <h2>{this.state.cityData.display_name}</h2>
-          <p>Lat:{this.state.cityData.lat}  Lon:{this.state.cityData.lon}</p>
-          <Map mapImg={this.state.cityMapImg} city={this.state.city} />
-        </>
-        }
 
-        {this.state.displayLocationError &&
-        <>
-          <ErrorModal
-            show={this.state.displayLocationError}
-            handleCloseErrorModal={this.state.handleCloseErrorModal}
-            errorCode={this.state.locationErrorCode}
-            errorDescription={this.state.locationErrorMessage}
-          />
-        </>
-        }
+        <ErrorModal
+          show={this.state.displayLocationError}
+          handleCloseErrorModal={this.handleCloseErrorModal}
+          errorCode={this.state.locationErrorCode}
+          errorDescription={this.state.locationErrorMessage}
+        />
       </>
     );
   }
