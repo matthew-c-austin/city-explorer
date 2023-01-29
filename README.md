@@ -7,6 +7,8 @@
 
 This application is a city explorer that lets you search for U.S. cities and display their coordinates, as well as a static map image.
 
+You are also able to check local weather data for three days based on a static set of data for a certain number of cities.
+
 ## Getting Started
 
 [Live site](matt-austin-city-explorer.netlify.app)
@@ -31,7 +33,8 @@ The Location Explorer functionality allows a user to for U.S. cities and display
 
 ## Change Log
 
-1.0.0 - Initial deployment of location explorer feature
+01-26-2023 9:00pm - Initial deployment of location explorer feature
+01-28-2023 6:00pm - Deployment of static weather API capable server interface.
 
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
@@ -77,3 +80,23 @@ Start time: 2023-01-26T15:00-08:00
 Finish time: 2023-01-26T15:45-08:00
 
 Actual time needed to complete: 45 minutes
+
+### Weather Placeholder
+
+Estimate of time needed to complete: 5 hours
+
+Start time: 2023-01-28T13:00-08:00
+
+Finish time: 2023-01-28T19:00-08:00
+
+Actual time needed to complete: 5 hours
+
+### Errors Revisited
+
+Estimate of time needed to complete: 5 hours
+
+Start time: 2023-01-28T13:00-08:00
+
+Finish time: 2023-01-28T19:00-08:00
+
+Actual time needed to complete: 5 hours
