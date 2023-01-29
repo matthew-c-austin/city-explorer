@@ -11,7 +11,7 @@ class ErrorModal extends React.Component {
         centered
       >
         <Modal.Header>
-          <Modal.Title>{`An Error Has Occured (╯°□°）╯︵ ┻━┻`}
+          <Modal.Title>{`An Error Has Occured with the ${this.props.errorSource} API`}
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
