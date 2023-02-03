@@ -1,13 +1,15 @@
 # City Explorer
 
 **Author**: Matthew Austin
-**Version**: 1.0.0
+**Version**: 1.0.2
 
 ## Overview
 
 This application is a city explorer that lets you search for U.S. cities and display their coordinates, as well as a static map image.
 
 You are also able to check local weather data for three days based on a static set of data for a certain number of cities.
+
+In addition, you can see movies that are related to the city in question, in no particular order.
 
 ## Getting Started
 
@@ -24,20 +26,17 @@ This app is built with:
 - React Bootstrap
 - Axios
 - Deployed on Netlify
+- [LocationIQ API](https://locationiq.com/)
 
-### Location Explorer
+The City Explorer functionality allows a user to for U.S. cities and display their coordinates, as well as a static map image. The web-request-response cycle for this feature is shown below
 
-The Location Explorer functionality allows a user to for U.S. cities and display their coordinates, as well as a static map image. The web-request-response cycle for this feature is shown below
-
-![Web Request Response Cycle for Location Explorer](public/images/location-explorer-WRC.jpg)
+![Web Request Response Cycle for Location Explorer](public/images/location-explorer-WRRC.jpg)
 
 ## Change Log
 
-01-26-2023 9:00pm - Initial deployment of location explorer feature
-01-28-2023 6:00pm - Deployment of static weather API capable server interface.
-
-## Credit and Collaborations
-<!-- Give credit (and a link) to other people or resources that helped you build this application. -->
+1.0.0 - 01-26-2023 9:00pm - Initial deployment of location explorer feature
+1.0.1 - 01-28-2023 6:00pm - Deployment of static weather API capable server interface.
+1.0.2 - 02-02-2023 7:50pm - Deployment of dynamic weather API and movie database API to display weather and movies for searched city.
 
 ## Feature Time Estimates
 
@@ -100,3 +99,23 @@ Start time: 2023-01-28T13:00-08:00
 Finish time: 2023-01-28T19:00-08:00
 
 Actual time needed to complete: 5 hours
+
+### Weather Live
+
+Estimate of time needed to complete: 3 hours
+
+Start time: 2023-02-01T16:30-08:00
+
+Finish time: 2023-01-28T19:15-08:00
+
+Actual time needed to complete: 3 hours, 15 minutes
+
+### Movies
+
+Estimate of time needed to complete: 2 hours
+
+Start time: 2023-02-02T16:30-08:00
+
+Finish time: 2023-01-28T17:30-08:00
+
+Actual time needed to complete: 1 hour
