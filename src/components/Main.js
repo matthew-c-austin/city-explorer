@@ -11,17 +11,17 @@ class Main extends React.Component {
     super(props);
 
     this.state = {
-      displayInfo: false,
-      displayLocationError: false,
       city: '',
       cityData: {},
       cityMapImg: '',
-      restaurantData: [],
+      displayInfo: false,
+      displayError: false,
+      errorCode: '',
+      errorMessage: '',
+      errorSource: '',
       locationData: [],
-      locationErrorCode: '',
-      locationErrorMessage: '',
+      movieData: [],
       weatherData: []
-
     };
 
     this.getLocation = this.getLocation.bind(this);
@@ -103,12 +103,12 @@ class Main extends React.Component {
     return response;
   }
 
-  getMap = (latAndLon) => {
+  getMap = (coordinates) => {
     const MAP_BASE_URL = 'https://maps.locationiq.com/v3/staticmap';
 
     // It's just easier to not use the URL API and just use a template literal here, because of comma encoding in the 'center' search param
 
-    let mapImageUrl = `${MAP_BASE_URL}?key=${process.env.REACT_APP_LOCATIONIQ_KEY}&center=${latAndLon}&zoom=10`;
+    let mapImageUrl = `${MAP_BASE_URL}?key=${process.env.REACT_APP_LOCATIONIQ_KEY}&center=${coordinates}&zoom=10`;
 
     return mapImageUrl;
   };
